@@ -2,7 +2,8 @@
 This init container create a file in a volume, After this process the main container check this file exist. 
 If file exist the main container goes sleep.
 
-./
+
+```javascript
 apiVersion: v1
 kind: Pod
 metadata:
@@ -28,4 +29,5 @@ spec:
   - name: workdir
     emptyDir: {}
     
-    ../
+```
+
